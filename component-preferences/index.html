@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis preferencess Web Component</title>
+
+  <style>
+    @font-face {
+      font-family: '__Quicksand_7f5e9f';
+      /* Nombre de la fuente */
+      src: url('./fonts/34a9823ac715e2c2-s.p.woff2') format('woff2');
+      /* Ruta relativa al archivo */
+      font-weight: normal;
+      /* Peso (normal, bold, etc.) */
+      font-style: normal;
+      /* Estilo (normal, italic, etc.) */
+      font-display: swap;
+      /* Recomendado para mejorar la experiencia de carga */
+    }
+
+    body {
+      font-family: '__Quicksand_7f5e9f', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Prueba fuente</h1>
+  <script>
+    window.b = window.b || {};
+    b['cp.avalId'] = '37/12315469BB';
+    b['tealium_random'] = '123456789012345';
+    window.utag = window.utag || {};
+    utag.link = function (dataLayer) {
+      console.log(dataLayer)
+    }
+    utag.loader = {};
+    utag.loader.RC = function (cookie) {
+      return {};
+    }
+    utag.loader.SC = function (cookie) {
+      return console.log(cookie);
+    }
+  </script>
+  <!-- <script src="https://tags.tiqcdn.com/utag/adl/tuplus/qa/utag.sync.js"></script>
+  <script src="https://tags.tiqcdn.com/utag/adl/tuplus/qa/utag.js"></script> -->
+  <a href="/login.html">ir a login</a>
+  <div style="width: 500px; height: 500px; background-color: aqua"></div>
+  <!-- <preferences-survey></preferences-survey> -->
+  <div style="width: 500px; height: 500px; background-color: blueviolet"></div>
+  <script src="PreferencesSurvey.js"></script>
+  <script src="instanceSurvey.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>shadow DOM</title>
+</head>
+
+<body>
+  <div id="surveyIDW" style="width: 500px;">
+    <sus-component></sus-component>
+  </div>
+  <script>
+    window.b = window.b || {};
+    b['cp.avalId'] = '37/12315469BB';
+    b['tealium_random'] = '123456789012345';
+    window.utag = window.utag || {};
+    utag.link = function (dataLayer) {
+      console.log(dataLayer)
+    }
+    utag.loader = {};
+    utag.loader.RC = function (cookie) {
+      return {};
+    }
+    utag.loader.SC = function (cookie) {
+      return console.log(cookie);
+    }
+  </script>
+  <script src="adl-storage.js"></script>
+  <!-- <script src="component_adl_sus.js"></script> -->
+  <!-- <script src="baseCode.js"></script> -->
+  <!-- <script src="adl_survey_ca.js"></script> -->
+  <!-- <script src="adl_survey_shadow_dom_ca.js"></script> -->
+  <script src="class ADL_CA_Survey.js"></script>
+  <script src="setup_ca.js"></script>
+</body>
+
+</html>
